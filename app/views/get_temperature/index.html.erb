@@ -1,0 +1,28 @@
+<div class="pl-3 pt-4" style="width: 350px">
+<h1 >室温一覧</h1>
+<%= form_with(url: show_detail_path, method: :get,data: { turbo: false }) do |form| %>
+  <%= form.label :room_id, "部屋の選択" %>
+  <%= form.select :room_id, @rooms%>
+  <%= form.submit "表示"%>
+<% end %>
+</div>
+<div class="table-responsive small  col-sm" style="width: 350px">
+<table class="table table-striped table-sm">
+  <thead>
+    <tr>
+      <th>日付</th>
+      <th>温度</th>
+      <th>部屋</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @list.each do |data| %>
+      <tr>
+        <td><%= l data.created_at, format: :default %></td>
+        <td><%= data.temperature %> ℃ </td>
+        <td><%= data.room.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
