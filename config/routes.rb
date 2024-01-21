@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'get_temperature#index'
+  post 'send_data', to: 'get_temperature#receive_data'
+  get 'show_data', to: 'get_temperature#index'
+  get 'show_detail', to: 'get_temperature#detail'
+  get 'csv', to: 'get_temperature#csv'
 end
