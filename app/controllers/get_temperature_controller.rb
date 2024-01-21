@@ -1,0 +1,2 @@
+class GetTemperatureController < ApplicationController
+end
