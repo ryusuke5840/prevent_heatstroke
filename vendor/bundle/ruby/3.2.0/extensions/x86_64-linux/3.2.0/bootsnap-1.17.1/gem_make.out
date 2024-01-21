@@ -1,0 +1,22 @@
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.1/ext/bootsnap
+/usr/bin/ruby3.2 extconf.rb
+creating Makefile
+
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240121-6323-6pbopv sitelibdir\=./.gem.20240121-6323-6pbopv clean
+
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240121-6323-6pbopv sitelibdir\=./.gem.20240121-6323-6pbopv
+compiling bootsnap.c
+bootsnap.c: In function ‘bs_precompile’:
+bootsnap.c:822:10: warning: unused variable ‘contents’ [-Wunused-variable]
+  822 |   char * contents = NULL;
+      |          ^~~~~~~~
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240121-6323-6pbopv sitelibdir\=./.gem.20240121-6323-6pbopv install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20240121-6323-6pbopv/bootsnap
+
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240121-6323-6pbopv sitelibdir\=./.gem.20240121-6323-6pbopv clean
