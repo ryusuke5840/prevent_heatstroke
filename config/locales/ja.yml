@@ -1,0 +1,5 @@
+ja:
+  time:
+    formats:
+      default: '%m月%d日 %H時%M分'
+      detail: '%m月%d日 %H時%M分%S秒'
