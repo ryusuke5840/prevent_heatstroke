@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  serialnumber: MyString
+  user_email: MyString
+  family_email: MyString
+  allert_count: 1
+
+two:
+  name: MyString
+  serialnumber: MyString
+  user_email: MyString
+  family_email: MyString
+  allert_count: 1
