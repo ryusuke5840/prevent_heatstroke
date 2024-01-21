@@ -1,0 +1,25 @@
+<div class="pl-3 pt-4 small" style="width: 350px">
+<h1><%= @room_name %></h1>
+</div>
+<div class="table-responsive small  col-sm" style="width: 350px">
+<table class="table table-striped table-sm">
+  <thead>
+    <tr>
+      <th>日付</th>
+      <th>温度</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @list.each do |data| %>
+      <tr>
+        <td><%= l data.created_at, format: :default %></td>
+        <td><%= data.temperature %> ℃ </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>
+<div class="pl-3 pt-4 ">
+<%= link_to "全体表示" ,show_data_path %>
+</div>
