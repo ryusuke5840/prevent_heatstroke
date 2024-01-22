@@ -28,7 +28,7 @@ class GetTemperatureController < ApplicationController
 
   def check_temperature(input,id)
     room = Room.find(id)
-    if input >= 30.0
+    if input >= 15.0
       if room.allert_count != 0
         AnounceMailer.danger_mail(room,room.allert_count).deliver_now
       end
