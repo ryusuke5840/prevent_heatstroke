@@ -20,12 +20,12 @@ default: &default
 
 development:
   <<: *default
-  adapter: postgresql
+  adapter: <%= ENV['DB_TYPE'] %>
   encoding: unicode
   timeout: 5000
-  host: db
-  username: dev
-  password: dev
+  host: <%= ENV['DB_HOST_DEVELOPMENT'] %>
+  username: <%= ENV['DB_USERNAME_DEVELOPMENT'] %>
+  password: <%= ENV['DB_PASSWORD_DEVELOPMENT'] %>
   database: apps_development
 
   # The specified database role being used to connect to postgres.
