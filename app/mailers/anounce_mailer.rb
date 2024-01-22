@@ -17,4 +17,11 @@ class AnounceMailer < ApplicationMailer
       subject: '危険です'
     )
   end
+
+  def test_mail(email)
+    mail(
+      to:   email,
+      subject: 'テストメール'
+    )
+  end
 end
