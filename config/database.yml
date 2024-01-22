@@ -60,12 +60,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
+  adapter: <%= ENV['DB_TYPE'] %>
+  encoding: <%= ENV['DB_ENCODE'] %>
   timeout: 5000
-  host: db
-  username: dev
-  password: dev
+  host: <%= ENV['DB_HOST_DEVELOPMENT'] %>
+  username: <%= ENV['DB_USERNAME_DEVELOPMENT'] %>
+  password: <%= ENV['DB_PASSWORD_DEVELOPMENT'] %>
   database: apps_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
