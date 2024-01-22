@@ -74,3 +74,5 @@ group :production, :staging do
   gem 'unicorn'
   gem 'mysql2'
 end
+
+gem 'dotenv-rails'
