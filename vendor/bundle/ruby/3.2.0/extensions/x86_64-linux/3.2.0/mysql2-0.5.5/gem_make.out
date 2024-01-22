@@ -6,6 +6,9 @@ checking for rb_gc_mark_movable()... yes
 checking for rb_wait_for_single_fd()... yes
 checking for rb_enc_interned_str() in ruby.h... yes
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fd5aa67c0eb20b78388dc1e13452378c1e62ad11
 -----
 Using mysql_config at /usr/bin/mysql_config
 -----
@@ -30,6 +33,7 @@ checking for my_bool in mysql.h... no
 Setting rpath to /usr/lib64/mysql
 -----
 creating Makefile
+<<<<<<< HEAD
 
 current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.5/ext/mysql2
 make DESTDIR\= sitearchdir\=./.gem.20240121-19909-ekxksr sitelibdir\=./.gem.20240121-19909-ekxksr clean
@@ -54,49 +58,31 @@ make DESTDIR\= sitearchdir\=./.gem.20240121-19909-ekxksr sitelibdir\=./.gem.2024
 Could not create Makefile due to some reason, probably lack of necessary
 libraries and/or headers.  Check the mkmf.log file for more details.  You may
 need configuration options.
+=======
+>>>>>>> fd5aa67c0eb20b78388dc1e13452378c1e62ad11
 
-Provided configuration options:
-	--with-opt-dir
-	--without-opt-dir
-	--with-opt-include
-	--without-opt-include=${opt-dir}/include
-	--with-opt-lib
-	--without-opt-lib=${opt-dir}/lib64
-	--with-make-prog
-	--without-make-prog
-	--srcdir=.
-	--curdir
-	--ruby=/usr/bin/$(RUBY_BASE_NAME)3.2
-	--with-openssl-dir
-	--without-openssl-dir
-	--with-mysql-dir
-	--without-mysql-dir
-	--with-mysql-include
-	--without-mysql-include=${mysql-dir}/include
-	--with-mysql-lib
-	--without-mysql-lib=${mysql-dir}/lib64
-	--with-mysql-config
-	--without-mysql-config
-	--with-mysqlclient-dir
-	--without-mysqlclient-dir
-	--with-mysqlclient-include
-	--without-mysqlclient-include=${mysqlclient-dir}/include
-	--with-mysqlclient-lib
-	--without-mysqlclient-lib=${mysqlclient-dir}/lib64
-	--with-mysqlclientlib
-	--without-mysqlclientlib
-/usr/share/ruby3.2/mkmf.rb:1083:in `block in find_library': undefined method `split' for nil:NilClass (NoMethodError)
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.5/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20240122-41791-1vs2cw sitelibdir\=./.gem.20240122-41791-1vs2cw clean
 
-    paths = paths.flat_map {|path| path.split(File::PATH_SEPARATOR)}
-                                       ^^^^^^
-	from /usr/share/ruby3.2/mkmf.rb:1083:in `each'
-	from /usr/share/ruby3.2/mkmf.rb:1083:in `flat_map'
-	from /usr/share/ruby3.2/mkmf.rb:1083:in `find_library'
-	from extconf.rb:131:in `<main>'
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.5/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20240122-41791-1vs2cw sitelibdir\=./.gem.20240122-41791-1vs2cw
+compiling client.c
+compiling infile.c
+compiling mysql2_ext.c
+compiling result.c
+compiling statement.c
+linking shared-object mysql2/mysql2.so
 
-To see why this extension failed to compile, please check the mkmf.log which can be found here:
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.5/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20240122-41791-1vs2cw sitelibdir\=./.gem.20240122-41791-1vs2cw install
+/usr/bin/install -c -m 0755 mysql2.so ./.gem.20240122-41791-1vs2cw/mysql2
 
+<<<<<<< HEAD
   /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/extensions/x86_64-linux/3.2.0/mysql2-0.5.5/mkmf.log
 
 extconf failed, exit code 1
 >>>>>>> c309b029a2aadfa00caf23997043998dcbe2bf1d
+=======
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.5/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20240122-41791-1vs2cw sitelibdir\=./.gem.20240122-41791-1vs2cw clean
+>>>>>>> fd5aa67c0eb20b78388dc1e13452378c1e62ad11
