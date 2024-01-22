@@ -5,52 +5,46 @@ checking for rb_absint_singlebit_p()... yes
 checking for rb_gc_mark_movable()... yes
 checking for rb_wait_for_single_fd()... yes
 checking for rb_enc_interned_str() in ruby.h... yes
-*** extconf.rb failed ***
-Could not create Makefile due to some reason, probably lack of necessary
-libraries and/or headers.  Check the mkmf.log file for more details.  You may
-need configuration options.
+-----
+Using mysql_config at /usr/bin/mysql_config
+-----
+checking for mysql.h... yes
+checking for errmsg.h... yes
+checking for SSL_MODE_DISABLED in mysql.h... yes
+checking for SSL_MODE_PREFERRED in mysql.h... yes
+checking for SSL_MODE_REQUIRED in mysql.h... yes
+checking for SSL_MODE_VERIFY_CA in mysql.h... yes
+checking for SSL_MODE_VERIFY_IDENTITY in mysql.h... yes
+checking for MYSQL.net.vio in mysql.h... yes
+checking for MYSQL.net.pvio in mysql.h... no
+checking for MYSQL_DEFAULT_AUTH in mysql.h... yes
+checking for MYSQL_ENABLE_CLEARTEXT_PLUGIN in mysql.h... yes
+checking for SERVER_QUERY_NO_GOOD_INDEX_USED in mysql.h... yes
+checking for SERVER_QUERY_NO_INDEX_USED in mysql.h... yes
+checking for SERVER_QUERY_WAS_SLOW in mysql.h... yes
+checking for MYSQL_OPTION_MULTI_STATEMENTS_ON in mysql.h... yes
+checking for MYSQL_OPTION_MULTI_STATEMENTS_OFF in mysql.h... yes
+checking for my_bool in mysql.h... no
+-----
+Setting rpath to /usr/lib64/mysql
+-----
+creating Makefile
 
-Provided configuration options:
-	--with-opt-dir
-	--without-opt-dir
-	--with-opt-include
-	--without-opt-include=${opt-dir}/include
-	--with-opt-lib
-	--without-opt-lib=${opt-dir}/lib64
-	--with-make-prog
-	--without-make-prog
-	--srcdir=.
-	--curdir
-	--ruby=/usr/bin/$(RUBY_BASE_NAME)3.2
-	--with-openssl-dir
-	--without-openssl-dir
-	--with-mysql-dir
-	--without-mysql-dir
-	--with-mysql-include
-	--without-mysql-include=${mysql-dir}/include
-	--with-mysql-lib
-	--without-mysql-lib=${mysql-dir}/lib64
-	--with-mysql-config
-	--without-mysql-config
-	--with-mysqlclient-dir
-	--without-mysqlclient-dir
-	--with-mysqlclient-include
-	--without-mysqlclient-include=${mysqlclient-dir}/include
-	--with-mysqlclient-lib
-	--without-mysqlclient-lib=${mysqlclient-dir}/lib64
-	--with-mysqlclientlib
-	--without-mysqlclientlib
-/usr/share/ruby3.2/mkmf.rb:1083:in `block in find_library': undefined method `split' for nil:NilClass (NoMethodError)
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.5/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20240122-41791-1vs2cw sitelibdir\=./.gem.20240122-41791-1vs2cw clean
 
-    paths = paths.flat_map {|path| path.split(File::PATH_SEPARATOR)}
-                                       ^^^^^^
-	from /usr/share/ruby3.2/mkmf.rb:1083:in `each'
-	from /usr/share/ruby3.2/mkmf.rb:1083:in `flat_map'
-	from /usr/share/ruby3.2/mkmf.rb:1083:in `find_library'
-	from extconf.rb:131:in `<main>'
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.5/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20240122-41791-1vs2cw sitelibdir\=./.gem.20240122-41791-1vs2cw
+compiling client.c
+compiling infile.c
+compiling mysql2_ext.c
+compiling result.c
+compiling statement.c
+linking shared-object mysql2/mysql2.so
 
-To see why this extension failed to compile, please check the mkmf.log which can be found here:
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.5/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20240122-41791-1vs2cw sitelibdir\=./.gem.20240122-41791-1vs2cw install
+/usr/bin/install -c -m 0755 mysql2.so ./.gem.20240122-41791-1vs2cw/mysql2
 
-  /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/extensions/x86_64-linux/3.2.0/mysql2-0.5.5/mkmf.log
-
-extconf failed, exit code 1
+current directory: /var/www/prevent_heatstroke/vendor/bundle/ruby/3.2.0/gems/mysql2-0.5.5/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20240122-41791-1vs2cw sitelibdir\=./.gem.20240122-41791-1vs2cw clean
