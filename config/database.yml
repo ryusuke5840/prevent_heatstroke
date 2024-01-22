@@ -21,7 +21,7 @@ default: &default
 development:
   <<: *default
   adapter: <%= ENV['DB_TYPE'] %>
-  encoding: unicode
+  encoding: <%= ENV['DB_ENCODE'] %>
   timeout: 5000
   host: <%= ENV['DB_HOST_DEVELOPMENT'] %>
   username: <%= ENV['DB_USERNAME_DEVELOPMENT'] %>
